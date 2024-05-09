@@ -1,0 +1,85 @@
+:root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+header{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+}
+
+button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(182, 182, 182);
+}
+
+.card {
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 40% 10% 10%;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgb(207, 207, 207);
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid rgb(207, 207, 207);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+form > label {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 6px;
+}
+
+form > label > input {
+  border: none;
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  outline: none;
+  padding: 4px 10px;
+}
+
+form > button {
+  margin: 8px 8px;
+}
+
+.error {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: rgb(254, 193, 193);
+  color: rgb(204, 0, 0);
+  width: 100%;
+  display: none;
+}
